@@ -1,0 +1,5 @@
+Task 2 job sequencing
+Placed A in slot 2
+Placed C in slot 1
+Placed D in slot 3
+Result: (['C', 'A', 'D'], 180)

@@ -1,0 +1,3 @@
+Task 5 Dijkstra: ({'A': 0, 'B': 4, 'C': 6, 'D': 7, 'E': 10}, {'A': None, 'B': 'A', 'C': 'B', 'D': 'C', 'E': 'D'})
+Bellman-Ford: ({'A': 0, 'B': 4, 'C': 6, 'D': 7, 'E': 10}, False)
+Floyd from A: {'A': 0, 'B': 4, 'C': 6, 'D': 7, 'E': 10}

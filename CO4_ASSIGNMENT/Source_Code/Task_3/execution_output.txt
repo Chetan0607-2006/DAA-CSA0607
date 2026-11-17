@@ -1,0 +1,2 @@
+Task 3 0/1 knapsack: optimum 45 items ['Q', 'R']
+Final DP row: [0, 0, 12, 20, 25, 32, 37, 45]

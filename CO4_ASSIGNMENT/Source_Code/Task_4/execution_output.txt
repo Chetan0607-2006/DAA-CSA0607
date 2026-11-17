@@ -1,0 +1,4 @@
+Task 4 failing case: text=xyzcat, dictionary={cat}
+Faulty states: [True, False, False, False, False, False, True]
+Fixed states: [True, False, False, False, False, False, False]
+Regression: True

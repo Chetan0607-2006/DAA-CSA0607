@@ -1,0 +1,18 @@
+Task 6 official dataset
+J1: compatible prefix=0, include=20, exclude=0, best=20
+J2: compatible prefix=0, include=50, exclude=20, best=50
+J3: compatible prefix=1, include=50, exclude=50, best=50
+J4: compatible prefix=3, include=90, exclude=50, best=90
+J5: compatible prefix=2, include=110, exclude=90, best=110
+J6: compatible prefix=4, include=120, exclude=110, best=120
+J7: compatible prefix=5, include=160, exclude=120, best=160
+J8: compatible prefix=7, include=200, exclude=160, best=200
+Result: (200, ['J2', 'J5', 'J7', 'J8'])
+Adversarial dataset:
+B: compatible prefix=0, include=30, exclude=0, best=30
+C: compatible prefix=1, include=60, exclude=30, best=60
+D: compatible prefix=2, include=90, exclude=60, best=90
+E: compatible prefix=3, include=120, exclude=90, best=120
+A: compatible prefix=0, include=100, exclude=120, best=120
+F: compatible prefix=4, include=150, exclude=120, best=150
+Result: (150, ['B', 'C', 'D', 'E', 'F'])
