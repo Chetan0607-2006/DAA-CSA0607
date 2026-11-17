@@ -1,0 +1,19 @@
+FUNCTION CLOSEST_LOGINS(events)
+    IF fewer than 2 events THEN RETURN (NONE, INFINITY)
+    Sort (x, y, original_index) by x
+    active = empty collection ordered by y
+    best_squared_distance = INFINITY; best_pair = NONE
+    FOR each point p in increasing x
+        Remove active points whose x-gap squared >= best_squared_distance
+        Restrict active candidates to y in [p.y-best_distance, p.y+best_distance]
+        FOR each candidate q in that y-range
+            Compute squared Euclidean distance (no square root)
+            IF distance_squared < best_squared_distance
+                update best distance and original-index pair
+            END IF
+        END FOR
+        Insert p into active collection ordered by y
+    END FOR
+    RETURN best_pair and square_root(best_squared_distance)
+END FUNCTION
+// This sweep-line method prunes points that cannot beat the current best.

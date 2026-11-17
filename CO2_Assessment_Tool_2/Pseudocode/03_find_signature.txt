@@ -1,0 +1,14 @@
+FUNCTION FIND_SIGNATURE(log, pattern)
+    IF pattern is empty THEN RETURN every boundary index 0..length(log)
+    n = length(log); m = length(pattern); hits = empty list
+    FOR start = 0 TO n-m inclusive
+        FOR offset = 0 TO m-1
+            IF log[start+offset] != pattern[offset] THEN
+                stop checking this alignment
+            END IF
+        END FOR
+        IF all m characters matched THEN append start to hits
+    END FOR
+    RETURN hits
+END FUNCTION
+// The inclusive final alignment is n-m; overlapping matches are retained.

@@ -1,0 +1,14 @@
+Insertion sort experiment:
+{
+  "dataset_size": 1200,
+  "nearly_sorted_insertion_comparisons": 1199,
+  "random_insertion_comparisons": 318395,
+  "nearly_sorted_builtin_seconds": 3.674414999998987e-05,
+  "random_builtin_seconds": 7.280630000003896e-05
+}
+
+Closest-pair distance computations:
+Events | Brute force | Sweep line
+1000 | 499500 | 11
+4000 | 7998000 | 15
+8000 | 31996000 | 20

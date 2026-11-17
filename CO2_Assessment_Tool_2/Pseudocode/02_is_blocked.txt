@@ -1,0 +1,9 @@
+FUNCTION IS_BLOCKED(blocklist, ip)
+    FOR EACH item IN blocklist
+        IF item = ip THEN RETURN TRUE
+    END FOR
+    RETURN FALSE
+END FUNCTION
+
+Optimised repeated-query form: convert blocklist to a hash set once, then
+return (ip IN blocklist_set) for each query.
