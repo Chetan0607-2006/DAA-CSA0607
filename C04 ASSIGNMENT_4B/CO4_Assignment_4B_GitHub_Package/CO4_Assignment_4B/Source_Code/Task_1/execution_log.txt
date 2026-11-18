@@ -1,0 +1,43 @@
+
+WIDTH 12
+DP suffix 5 minimum penalty 0 next 6
+DP suffix 4 minimum penalty 16 next 5
+DP suffix 3 minimum penalty 25 next 4
+DP suffix 2 minimum penalty 50 next 3
+DP suffix 1 minimum penalty 51 next 2
+DP suffix 0 minimum penalty 76 next 1
+'dynamic' unused 5 penalty 25
+'programming' unused 1 penalty 1
+'creates' unused 5 penalty 25
+'efficient' unused 3 penalty 9
+'document' unused 4 penalty 16
+'layouts' unused 5 penalty 0
+TOTAL 76
+
+WIDTH 16
+DP suffix 5 minimum penalty 0 next 6
+DP suffix 4 minimum penalty 0 next 6
+DP suffix 3 minimum penalty 49 next 4
+DP suffix 2 minimum penalty 130 next 3
+DP suffix 1 minimum penalty 155 next 2
+DP suffix 0 minimum penalty 236 next 1
+'dynamic' unused 9 penalty 81
+'programming' unused 5 penalty 25
+'creates' unused 9 penalty 81
+'efficient' unused 7 penalty 49
+'document layouts' unused 0 penalty 0
+TOTAL 236
+
+WIDTH 20
+DP suffix 5 minimum penalty 0 next 6
+DP suffix 4 minimum penalty 0 next 6
+DP suffix 3 minimum penalty 4 next 5
+DP suffix 2 minimum penalty 9 next 4
+DP suffix 1 minimum penalty 5 next 3
+DP suffix 0 minimum penalty 10 next 2
+'dynamic programming' unused 1 penalty 1
+'creates efficient' unused 3 penalty 9
+'document layouts' unused 4 penalty 0
+TOTAL 10
+DP suffix 0 minimum penalty inf next -1
+Expected boundary error: word exceeds width

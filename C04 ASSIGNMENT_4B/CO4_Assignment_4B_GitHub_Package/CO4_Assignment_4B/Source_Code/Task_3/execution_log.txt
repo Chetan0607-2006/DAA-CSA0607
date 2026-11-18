@@ -1,0 +1,41 @@
+Finalization ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+route A 0 ['A'] predecessor None
+route B 4 ['A', 'B'] predecessor A
+route C 7 ['A', 'B', 'C'] predecessor B
+route D 9 ['A', 'B', 'C', 'D'] predecessor C
+route E 11 ['A', 'B', 'C', 'D', 'E'] predecessor D
+route F 12 ['A', 'B', 'C', 'D', 'E', 'F'] predecessor E
+route G 14 ['A', 'B', 'C', 'D', 'E', 'F', 'G'] predecessor F
+route H 17 ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'] predecessor G
+Negative edge prediction: may create a negative cycle; Dijkstra rejected
+Expected Dijkstra guard: Dijkstra requires nonnegative weights
+pass 1 distances {'A': 0, 'B': 0, 'C': 7, 'D': 9, 'E': 11, 'F': 12, 'G': 14, 'H': 17}
+pass 2 distances {'A': 0, 'B': -4, 'C': 3, 'D': 5, 'E': 7, 'F': 8, 'G': 10, 'H': 13}
+pass 3 distances {'A': 0, 'B': -8, 'C': -1, 'D': 1, 'E': 3, 'F': 4, 'G': 6, 'H': 9}
+pass 4 distances {'A': 0, 'B': -12, 'C': -5, 'D': -3, 'E': -1, 'F': 0, 'G': 2, 'H': 5}
+pass 5 distances {'A': 0, 'B': -16, 'C': -9, 'D': -7, 'E': -5, 'F': -4, 'G': -2, 'H': 1}
+pass 6 distances {'A': 0, 'B': -20, 'C': -13, 'D': -11, 'E': -9, 'F': -8, 'G': -6, 'H': -3}
+pass 7 distances {'A': 0, 'B': -24, 'C': -17, 'D': -15, 'E': -13, 'F': -12, 'G': -10, 'H': -7}
+Expected Bellman-Ford detection: reachable negative cycle
+pass 1 distances {'A': 0, 'B': 4, 'C': 7, 'D': 9, 'E': 11, 'F': 12, 'G': -1, 'H': 17}
+pass 2 distances {'A': 0, 'B': 4, 'C': 7, 'D': 9, 'E': 11, 'F': 12, 'G': -1, 'H': 2}
+pass 3 distances {'A': 0, 'B': 4, 'C': 7, 'D': 9, 'E': 11, 'F': 12, 'G': -1, 'H': 2}
+Negative edge without cycle: {'A': 0, 'B': 4, 'C': 7, 'D': 9, 'E': 11, 'F': 12, 'G': -1, 'H': 2}
+Floyd distances
+[0, 4, 7, 9, 11, 12, 14, 17]
+[inf, 0, 3, 5, 7, 8, 10, 13]
+[inf, inf, 0, 2, 4, 5, 7, 10]
+[inf, inf, inf, 0, 2, 3, 5, 8]
+[inf, inf, inf, inf, 0, 1, 3, 6]
+[inf, inf, inf, inf, inf, 0, 2, 5]
+[inf, inf, inf, inf, inf, inf, 0, 3]
+[inf, inf, inf, inf, inf, inf, inf, 0]
+Warshall reachability
+[1, 1, 1, 1, 1, 1, 1, 1]
+[0, 1, 1, 1, 1, 1, 1, 1]
+[0, 0, 1, 1, 1, 1, 1, 1]
+[0, 0, 0, 1, 1, 1, 1, 1]
+[0, 0, 0, 0, 1, 1, 1, 1]
+[0, 0, 0, 0, 0, 1, 1, 1]
+[0, 0, 0, 0, 0, 0, 1, 1]
+[0, 0, 0, 0, 0, 0, 0, 1]

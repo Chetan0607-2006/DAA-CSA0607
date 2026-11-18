@@ -1,0 +1,35 @@
+station 2 line 1 stay 18 transfer 23 chosen stay
+station 2 line 2 stay 17 transfer 16 chosen transfer
+station 3 line 1 stay 21 transfer 20 chosen transfer
+station 3 line 2 stay 22 transfer 27 chosen stay
+station 4 line 1 stay 24 transfer 28 chosen stay
+station 4 line 2 stay 26 transfer 25 chosen transfer
+station 5 line 1 stay 32 transfer 35 chosen stay
+station 5 line 2 stay 30 transfer 32 chosen stay
+station 6 line 1 stay 36 transfer 35 chosen transfer
+station 6 line 2 stay 37 transfer 43 chosen stay
+BASE (38, [1, 2, 1, 2, 2, 1], [(2, 1, 2), (3, 2, 1), (4, 1, 2), (6, 2, 1)])
+PREDICTION: increasing L1 station2 -> L2 station3 transfer cost may change route; optimum cannot decrease
+station 2 line 1 stay 18 transfer 23 chosen stay
+station 2 line 2 stay 17 transfer 16 chosen transfer
+station 3 line 1 stay 21 transfer 20 chosen transfer
+station 3 line 2 stay 22 transfer 47 chosen stay
+station 4 line 1 stay 24 transfer 28 chosen stay
+station 4 line 2 stay 26 transfer 25 chosen transfer
+station 5 line 1 stay 32 transfer 35 chosen stay
+station 5 line 2 stay 30 transfer 32 chosen stay
+station 6 line 1 stay 36 transfer 35 chosen transfer
+station 6 line 2 stay 37 transfer 43 chosen stay
+TRANSFER CHANGE (38, [1, 2, 1, 2, 2, 1], [(2, 1, 2), (3, 2, 1), (4, 1, 2), (6, 2, 1)])
+PREDICTION: slowing L1 station3 may move job to line 2; optimum cannot decrease
+station 2 line 1 stay 18 transfer 23 chosen stay
+station 2 line 2 stay 17 transfer 16 chosen transfer
+station 3 line 1 stay 41 transfer 40 chosen transfer
+station 3 line 2 stay 22 transfer 27 chosen stay
+station 4 line 1 stay 44 transfer 28 chosen transfer
+station 4 line 2 stay 26 transfer 45 chosen stay
+station 5 line 1 stay 36 transfer 36 chosen stay
+station 5 line 2 stay 31 transfer 36 chosen stay
+station 6 line 1 stay 40 transfer 36 chosen transfer
+station 6 line 2 stay 38 transfer 47 chosen stay
+DISRUPTION (39, [1, 2, 2, 2, 2, 1], [(2, 1, 2), (6, 2, 1)])

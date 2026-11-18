@@ -1,0 +1,38 @@
+BASE
+Kruskal select ('B', 'C', 1)
+Kruskal select ('A', 'C', 2)
+Kruskal select ('D', 'E', 2)
+Kruskal select ('E', 'F', 3)
+Kruskal select ('B', 'D', 5)
+kruskal edges [('B', 'C', 1), ('A', 'C', 2), ('D', 'E', 2), ('E', 'F', 3), ('B', 'D', 5)] total 13
+Prim select ('A', 'C', 2)
+Prim select ('B', 'C', 1)
+Prim select ('B', 'D', 5)
+Prim select ('D', 'E', 2)
+Prim select ('E', 'F', 3)
+prim edges [('A', 'C', 2), ('B', 'C', 1), ('B', 'D', 5), ('D', 'E', 2), ('E', 'F', 3)] total 13
+Boruvka select ('A', 'C', 2)
+Boruvka select ('B', 'C', 1)
+Boruvka select ('D', 'E', 2)
+Boruvka select ('E', 'F', 3)
+Boruvka select ('B', 'D', 5)
+boruvka edges [('A', 'C', 2), ('B', 'C', 1), ('D', 'E', 2), ('E', 'F', 3), ('B', 'D', 5)] total 13
+TIED WEIGHTS
+Kruskal select ('A', 'C', 2)
+Kruskal select ('B', 'C', 2)
+Kruskal select ('D', 'E', 2)
+Kruskal select ('E', 'F', 2)
+Kruskal select ('B', 'D', 5)
+kruskal edges [('A', 'C', 2), ('B', 'C', 2), ('D', 'E', 2), ('E', 'F', 2), ('B', 'D', 5)] total 13
+Prim select ('A', 'C', 2)
+Prim select ('B', 'C', 2)
+Prim select ('B', 'D', 5)
+Prim select ('D', 'E', 2)
+Prim select ('E', 'F', 2)
+prim edges [('A', 'C', 2), ('B', 'C', 2), ('B', 'D', 5), ('D', 'E', 2), ('E', 'F', 2)] total 13
+Boruvka select ('A', 'C', 2)
+Boruvka select ('B', 'C', 2)
+Boruvka select ('D', 'E', 2)
+Boruvka select ('E', 'F', 2)
+Boruvka select ('B', 'D', 5)
+boruvka edges [('A', 'C', 2), ('B', 'C', 2), ('D', 'E', 2), ('E', 'F', 2), ('B', 'D', 5)] total 13

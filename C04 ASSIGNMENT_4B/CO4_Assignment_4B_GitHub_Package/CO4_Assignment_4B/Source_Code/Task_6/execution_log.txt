@@ -1,0 +1,14 @@
+SMALL COST MATRIX
+[0, 10, 15, 20, 25]
+[15, 0, 10, 15, 20]
+[16, 15, 0, 10, 15]
+[17, 16, 15, 0, 10]
+[18, 17, 16, 15, 0]
+DP VALIDATION (58, [0, 1, 2, 3, 4, 0], 32)
+BRUTE VALIDATION (58, [0, 1, 2, 3, 4, 0])
+delivery locations 4 states 32 time_sec 3e-05 estimated_DP_entries 32 best 58 route [0, 1, 2, 3, 4, 0]
+delivery locations 5 states 80 time_sec 7.1e-05 estimated_DP_entries 80 best 78 route [0, 2, 3, 4, 5, 1, 0]
+delivery locations 6 states 192 time_sec 0.00018 estimated_DP_entries 192 best 89 route [0, 1, 3, 4, 5, 6, 2, 0]
+delivery locations 7 states 448 time_sec 0.000855 estimated_DP_entries 448 best 100 route [0, 1, 2, 4, 5, 6, 7, 3, 0]
+delivery locations 8 states 1024 time_sec 0.001425 estimated_DP_entries 1024 best 111 route [0, 1, 2, 3, 5, 6, 7, 8, 4, 0]
+200 locations: exact exponential DP intentionally not attempted
